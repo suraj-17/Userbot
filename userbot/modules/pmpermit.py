@@ -16,10 +16,10 @@ from userbot import (COUNT_PM, CMD_HELP, BOTLOG, BOTLOG_CHATID, PM_AUTO_BAN,
 from userbot.events import register
 
 # ========================= CONSTANTS ============================
-UNAPPROVED_MSG = ("`Welcome, You are a wonderful person with a wonderful view of life.`\n\n"
-                  "`Your companionship is always an opportunity But Sed This line is not for you.`"
-                  "`So just tell why you are here ?`\n\n"
-                  "`Your message will be responded when I'm free,Don't sit here whole day coz there are lots of pending messages😶‚`")
+UNAPPROVED_MSG = ("`Hi, I am ZERO-2, an AI created by Suraj-17 and I serve him.`\n\n"
+                  "`You have sent message without my master's permission.`"
+                  "`Wait for the approval of my master, he approves most of the PMs.`\n\n"
+                  "`And Don't even think about spamming...‚`")
 # =================================================================
 
 
@@ -66,7 +66,7 @@ async def permitpm(event):
                 else:
                     COUNT_PM[event.chat_id] = COUNT_PM[event.chat_id] + 1
 
-                if COUNT_PM[event.chat_id] > 4:
+                if COUNT_PM[event.chat_id] > 2:
                     await event.respond(
                         "`You were spamming my master's PM, which I didn't like.`\n"
                         "`You have been BLOCKED and reported as SPAM, until further notice.`"
